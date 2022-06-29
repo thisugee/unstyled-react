@@ -1,0 +1,8 @@
+{
+  "extends": "@unstyled-react/tsconfig/react-library.json",
+  "compilerOptions": {
+    "outDir": "build/esm",
+  },
+  "include": ["src"],
+  "exclude": ["build", "node_modules"]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@unstyled-react/pagination",
+  "version": "0.0.2",
+  "description": "Unstyled pagination component for React",
+  "keywords": [
+    "react",
+    "component",
+    "paginate",
+    "paginator",
+    "pagination"
+  ],
+  "author": "Ugochukwu Nneji <hi@ugee.xyz>",
+  "homepage": "https://github.com/thisugee/unstyled-react#readme",
+  "license": "MIT",
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
+  "types": "./build/esm/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir build/cjs",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build",
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@unstyled-react/eslint-config-custom": "*",
+    "@unstyled-react/tsconfig": "*",
+    "eslint": "^7.32.0",
+    "react": "^17.0.2",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
